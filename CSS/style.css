@@ -202,16 +202,16 @@ section h3{
 }
 
 .global-company {
-    display: flex; /* Active le mode flex */
-    justify-content: space-between; /* Espace entre les deux blocs */
-    align-items: center; /* Centre verticalement les contenus */
-    width: 100%; /* Occupe toute la largeur */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
     padding: 60px;
     box-sizing: border-box;
   }
   
   .information {
-    width: 40%; /* Occupe la moitié de l'écran */
+    width: 40%; 
     font-size: 25px;
     font-weight: bold;
     color: #05ab7f;
@@ -219,37 +219,37 @@ section h3{
   }
   
   .liens {
-    width: 80%; /* L’autre moitié de l'écran */
+    width: 80%; 
     display: flex;
-    flex-wrap: wrap; /* Permet le retour à la ligne des images */
-    justify-content: flex-end; /* Aligne les images à droite */
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
     align-items: center;
 
   }
   
   .liens li {
-    list-style: none; /* Supprime les puces de liste */
+    list-style: none; 
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espace entre les images */
+    gap: 20px; 
   }
   
   .liens img {
-    width: 100px; /* Ajuste la taille des images */
+    width: 100px; 
     height: auto;
-    border-radius: 8px; /* Coins arrondis pour un design plus doux */
-    transition: transform 0.3s ease; /* Effet au survol */
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
   }
   
   .liens img:hover {
-    transform: scale(1.1); /* Zoom léger au survol */
+    transform: scale(1.1); 
   }
   .platform {
-    display: flex; /* Utiliser Flexbox pour disposer les éléments */
-    justify-content: space-between; /* Espacer les éléments */
-    align-items: flex-start; /* Aligner les éléments en haut */
-    max-width: 1200px; /* Largeur maximale du conteneur */
-    margin: 0 auto; /* Centrer le conteneur */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1200px; 
+    margin: 0 auto; 
     background-image: url(" https://i.pinimg.com/originals/90/2d/e8/902de8c502788544a32c480f537f126d.png");
     background-repeat: no-repeat; 
     background-size: cover;
@@ -257,7 +257,7 @@ section h3{
 
 .partie1 {
     flex: 1; 
-    margin-right: 20px; /* Espace entre les deux parties */
+    margin-right: 20px; 
     margin-top: 85px;
 
 }
@@ -276,18 +276,18 @@ section h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
-    list-style-type: none; /* Supprimer les puces de la liste */
-    padding: 0; /* Supprimer le padding par défaut */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .box {
-    border: 1px solid #ccc; /* Bordure pour les boxes */
-    padding: 20px; /* Espacement interne */
-    border-radius: 8px; /* Coins arrondis */
-    background-color: #f9f9f9; /* Couleur de fond */
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
 }
 .box-up {
-  margin-top: -20px; /* Ajustez cette valeur selon vos besoins */
+  margin-top: -20px;
 }
 
 .platform h4 { 
@@ -295,29 +295,29 @@ section h3{
 }
 
 .ville {
-  display: flex; /* Utiliser Flexbox */
-  flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
-  justify-content: space-between; /* Espacer les éléments */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
   margin-left: 180px;
 }
 .box-ville {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; /* Espace entre les boxes */
-  list-style-type: none; /* Supprimer les puces de la liste */
-  padding: 0; /* Supprimer le padding par défaut */
-  margin-bottom: 20px; /* Espacement entre les lignes */
-  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+  gap: 20px; 
+  list-style-type: none; 
+  padding: 0; 
+  margin-bottom: 20px; 
+  box-sizing: border-box; 
   
 }
 
 
 img {
-  max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur de son conteneur */
-  width: 100%; /* Largeur fixe pour toutes les images */
-  height: 150px; /* Hauteur fixe pour toutes les images */
-  object-fit: cover; /* Remplit l'espace tout en conservant les proportions */
-  border-radius: 5px; /* Coins arrondis pour les images (optionnel) */
+  max-width: 100%; 
+  width: 100%; 
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 5px; 
 }
 button{
   color: rgb(255, 255, 255);
@@ -328,20 +328,20 @@ button{
   padding: 10px 20px;
 }
 .button:hover {
-  background-color: #c3d143; /* Couleur de fond au survol */
+  background-color: #c3d143; 
 }
 .fin {
-  display: flex; /* Utilise Flexbox */
-  flex-direction: column; /* Aligne les éléments en colonne */
-  justify-content: center; /* Centre verticalement */
-  align-items: center; /* Centre horizontalement */
-  height: 100vh; /* Hauteur de la fenêtre pour centrer verticalement */
-  text-align: center; /* Centre le texte */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center;
 }
 footer {
-  text-align: center; /* Centre le texte */
-  padding: 20px; /* Ajoute un peu d'espace autour du texte */
-  background-color: #f1f1f1; /* Optionnel : couleur de fond */
+  text-align: center; 
+  padding: 20px; 
+  background-color: #f1f1f1; 
 }
 h6{
   color: rgb(40, 40, 146);
