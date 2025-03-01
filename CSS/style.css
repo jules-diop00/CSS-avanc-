@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding-top: 80px; /* Évite que le contenu passe sous la navbar */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px; /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile pour distinguer la navbar */
+    z-index: 1000; /* Navbar au-dessus du reste */
+  }
+  
+  .logo {
+    height: 90px; 
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: -200px;
+  }
+  
+  .green-link {
+    color: rgb(0, 150, 45); /* Lien 'About us' en vert */
+  }
+  
+  /* Dropdown (optionnel : améliore l'affichage des sous-menus) */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: table-row; 
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 5px 10px;
+    color: rgb(255, 251, 251);
+    white-space: nowrap;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fffefe;
+  }
+
+header ul {
+    list-style-type: none;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 25%;
+    margin-right: 90px;
+}
+header ul li a{
+    color: grey;
+}
+header ul li a:hover{
+    color: #24ad8c;
+}
+
+#About-us{
+    justify-content: space-between;
+    align-items: flex-start;
+    display: list-item;
+    padding-top: 100px;
+
+}
+.icon img{
+    width: 24px; /* Définit la largeur de l'image */
+    height: 24px; /* Définit la hauteur de l'image */
+    display: flex;
+    transform: translate(2550%, -20%);
+}
+
+section h3{
+    color:#24ad8c;
+    justify-content: center;
+    display: flex;
+    transform: translate(%, 25%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.grid {
+    margin: 0 auto;
+    overflow: hidden; 
+    text-align: center;
+    width: 75%;
+    
+  }
+  
+  .grid:after,
+  .grid:before {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  
+  [class*=col-] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    box-sizing: border-box; /* Gère le padding sans casser la largeur */
+    color: gray;
+  }
+  
+  .col-2 {
+    width: 50%;
+  }
+  
+  .col-2 p {
+    text-align: justify; 
+  }
+ .col-2 p a{
+    color: blue;
+ }
+
+ .solutions{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 48px;
+ }
+.For-patients{
+    border: #24ad8c;
+    color: white;
+    width: 27%;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #24ad8c ;
+    box-shadow: #080435;
+    font-size: 20px;
+}
+.choose-country a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .choose-country a:hover {
+    color: #ffeb3b; 
+  }
+  
+.For-patients a{
+    color: rgb(0, 0, 0);
+}
+.For-doctors{
+    color: rgb(255, 255, 255);
+    width: 27%;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #2a1e98 ;
+    font-size: 20px;
+}
+.choose-country{
+    color: white;
+}
+.For-doctors a{
+    color: rgb(0, 0, 0);
+}
+.For-clinics{
+    color: white;
+    width: 27%;
+    height:350px;
+    border-radius: 20px;
+    background-color: #080435 ;
+    font-size: 20px;
+}
+
+.For-clinics a{
+    color: rgb(0, 0, 0);
+}
+
+.global-company {
+    display: flex; /* Active le mode flex */
+    justify-content: space-between; /* Espace entre les deux blocs */
+    align-items: center; /* Centre verticalement les contenus */
+    width: 100%; /* Occupe toute la largeur */
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  
+  .information {
+    width: 40%; /* Occupe la moitié de l'écran */
+    font-size: 25px;
+    font-weight: bold;
+    color: #05ab7f;
+    padding-left: 10%;
+  }
+  
+  .liens {
+    width: 80%; /* L’autre moitié de l'écran */
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne des images */
+    justify-content: flex-end; /* Aligne les images à droite */
+    align-items: center;
+
+  }
+  
+  .liens li {
+    list-style: none; /* Supprime les puces de liste */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les images */
+  }
+  
+  .liens img {
+    width: 100px; /* Ajuste la taille des images */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour un design plus doux */
+    transition: transform 0.3s ease; /* Effet au survol */
+  }
+  
+  .liens img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+  }
+  .platform {
+    display: flex; /* Utiliser Flexbox pour disposer les éléments */
+    justify-content: space-between; /* Espacer les éléments */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrer le conteneur */
+    background-image: url(" https://i.pinimg.com/originals/90/2d/e8/902de8c502788544a32c480f537f126d.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.partie1 {
+    flex: 1; 
+    margin-right: 20px; /* Espace entre les deux parties */
+    margin-top: 85px;
+
+}
+.partie1 p{
+  color: #05ab7f;
+}
+.partie1 h5{
+  color: gray;
+}
+
+.partie2 {
+    flex: 1; 
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer le padding par défaut */
+}
+
+.box {
+    border: 1px solid #ccc; /* Bordure pour les boxes */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+.box-up {
+  margin-top: -20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.platform h4 { 
+    color:#24ad8c ;
+}
+
+.ville {
+  display: flex; /* Utiliser Flexbox */
+  flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne */
+  justify-content: space-between; /* Espacer les éléments */
+  margin-left: 180px;
+}
+.box-ville {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; /* Espace entre les boxes */
+  list-style-type: none; /* Supprimer les puces de la liste */
+  padding: 0; /* Supprimer le padding par défaut */
+  margin-bottom: 20px; /* Espacement entre les lignes */
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+  
+}
+
+
+img {
+  max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur de son conteneur */
+  width: 100%; /* Largeur fixe pour toutes les images */
+  height: 150px; /* Hauteur fixe pour toutes les images */
+  object-fit: cover; /* Remplit l'espace tout en conservant les proportions */
+  border-radius: 5px; /* Coins arrondis pour les images (optionnel) */
+}
+button{
+  color: rgb(255, 255, 255);
+  background-color: #3a5fcf;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.button:hover {
+  background-color: #c3d143; /* Couleur de fond au survol */
+}
+.fin {
+  display: flex; /* Utilise Flexbox */
+  flex-direction: column; /* Aligne les éléments en colonne */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  height: 100vh; /* Hauteur de la fenêtre pour centrer verticalement */
+  text-align: center; /* Centre le texte */
+}
+footer {
+  text-align: center; /* Centre le texte */
+  padding: 20px; /* Ajoute un peu d'espace autour du texte */
+  background-color: #f1f1f1; /* Optionnel : couleur de fond */
+}
+h6{
+  color: rgb(40, 40, 146);
+}
